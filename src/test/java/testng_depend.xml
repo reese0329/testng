@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <!--可以同时开启多条线程进行测试任务-->
-<suite name="Suite3"  parallel="methods" thread-count="2">
-    <test name="test12">
+<suite name="Suite_depend"  parallel="methods" thread-count="2">
+    <test name="test_depend" >
         <classes>
-
-            <class name="testng_base" >
+            <class name="testng_depend" >
             <!--<class name="testng_base" >-->
             </class>
-
-
-
         </classes>
     </test>
 </suite>
