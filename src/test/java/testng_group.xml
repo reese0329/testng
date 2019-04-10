@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--可以同时开启多条线程进行测试任务-->
+<suite name="Suite1"  parallel="methods" thread-count="2">
+    <test name="test_group" >
+        <groups>
+            <run>
+                <include name="group1" />
+            </run>
+        </groups>
+        <classes>
+            <class name="testng_group" >
+            <!--<class name="testng_base" >-->
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+
+

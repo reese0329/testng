@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="MIIT-20171025HB" tests="3" failures="0" timestamp="10 Apr 2019 07:38:28 GMT" time="0.011" errors="0">
+  <testcase name="abc" time="0.001" classname="testng_before_after_class"/>
+  <testcase name="abc1" time="0.0" classname="testng_before_after_class"/>
+  <testcase name="abc2" time="0.0" classname="testng_before_after_class"/>
+</testsuite>
