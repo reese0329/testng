@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "topics",
+  "type": "object",
+  "properties": {
+    "topics": {
+      "type": "array",
+      "items":{
+        "type":"object",
+        "properties":{
+          "id":{ "type":"integer"},
+          "title":{"type":"string"},
+          "user":{"type": "object",
+          "properties": {
+            "id":{"type": "integer"},
+            "login":{"type": "string"}
+          }},
+          "deleted":{"type":"boolean"},
+          "closed_at":{"type":"null"}
+        },
+
+        "required":["id","title","created_at"]
+      }
+    }
+  },
+
+  "required": [
+    "topics"
+  ]
+}

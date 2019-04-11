@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--可以同时开启多条线程进行测试任务-->
+<suite name="Suite_parameters"  parallel="methods" thread-count="2">
+    <test name="test0411">
+        <parameter name="username" value="trx" />
+        <classes>
+
+            <class name="testng_parameters" >
+            </class>
+
+
+
+
+        </classes>
+
+    </test>
+</suite>

@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="11" started-at="2019-04-10T15:38:28Z" finished-at="2019-04-10T15:38:28Z">
+  <suite name="Suite_depend" duration-ms="18" started-at="2019-04-11T09:35:08Z" finished-at="2019-04-11T09:35:08Z">
     <groups>
     </groups>
-    <test name="demo_testng" duration-ms="11" started-at="2019-04-10T15:38:28Z" finished-at="2019-04-10T15:38:28Z">
-      <class name="testng_before_after_class">
-        <test-method status="PASS" signature="BeforeClass()" name="BeforeClass" is-config="true" duration-ms="5" started-at="2019-04-10T15:38:28Z" finished-at="2019-04-10T15:38:28Z">
+    <test name="test_depend" duration-ms="18" started-at="2019-04-11T09:35:08Z" finished-at="2019-04-11T09:35:08Z">
+      <class name="testng_depend">
+        <test-method status="PASS" signature="abc1()" name="abc1" duration-ms="7" started-at="2019-04-11T09:35:08Z" finished-at="2019-04-11T09:35:08Z">
         </test-method>
-        <test-method status="PASS" signature="abc()" name="abc" duration-ms="1" started-at="2019-04-10T15:38:28Z" finished-at="2019-04-10T15:38:28Z">
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="7" started-at="2019-04-11T09:35:08Z" finished-at="2019-04-11T09:35:08Z">
         </test-method>
-        <test-method status="PASS" signature="AfterClass()" name="AfterClass" is-config="true" duration-ms="0" started-at="2019-04-10T15:38:28Z" finished-at="2019-04-10T15:38:28Z">
+        <test-method status="PASS" signature="abc2()" name="abc2" duration-ms="0" started-at="2019-04-11T09:35:08Z" finished-at="2019-04-11T09:35:08Z">
         </test-method>
-        <test-method status="PASS" signature="abc2()" name="abc2" duration-ms="0" started-at="2019-04-10T15:38:28Z" finished-at="2019-04-10T15:38:28Z">
-        </test-method>
-        <test-method status="PASS" signature="abc1()" name="abc1" duration-ms="0" started-at="2019-04-10T15:38:28Z" finished-at="2019-04-10T15:38:28Z">
+        <test-method status="PASS" signature="function()" name="function" duration-ms="0" started-at="2019-04-11T09:35:08Z" depends-on-methods="testng_depend.abc, testng_depend.abc2" finished-at="2019-04-11T09:35:08Z">
         </test-method>
       </class>
     </test>
